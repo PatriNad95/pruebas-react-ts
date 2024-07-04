@@ -1,7 +1,12 @@
+import { MiContextoProvider } from "./core/contexto";
+import { Rutas } from "./rutas";
+
 export const App = () => {
+  // return <GridMiembros />;
+  // return <GridPersonajes />;
   return (
-    <>
-      <h1>Bootcamps JS - TypeScript React SandBox</h1>
-    </>
+    <MiContextoProvider>
+      <Rutas />
+    </MiContextoProvider>
   );
 };
